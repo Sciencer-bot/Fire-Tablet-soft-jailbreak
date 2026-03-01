@@ -1,25 +1,27 @@
-# Fire Tablet Easy Installer
+# Easy ADB Installer
 
-This script installs Google Play Services and Aurora Store
-on Fire OS tablets using Linux.
+Install ANY APK, APKM, or XAPK file to your Android device using Linux.
 
 ## Requirements
 
 - Linux
 - Python 3
-- ADB installed (`sudo apt install adb`)
-- USB debugging enabled on tablet
+- ADB installed:
+  sudo apt install adb
+- USB debugging enabled
 
 ## How To Use
 
-1. Put ALL your .apk and .apkm files in this folder.
-2. Connect tablet with USB.
+1. Put ANY .apk, .apkm, or .xapk files in this folder.
+2. Connect your device via USB.
 3. Run:
 
-   python3 fire_install.py
+   python3 easy_adb_installer.py
 
 4. Wait.
-5. Tablet reboots.
-6. Open Aurora Store.
+5. Done.
 
-Done.
+The script automatically:
+- Extracts bundles
+- Installs split APKs properly
+- Cleans up temporary files
